@@ -11,7 +11,7 @@
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -276,18 +276,19 @@
     font-style: normal;
     font-weight: 500;
     line-height: 128.4%;
+    padding-top: 30px;
 
 }
 
 .paragraph-2 {
     color: rgba(43, 53, 62, 0.70);
     font-family: 'Roboto', sans-serif;
-    font-size: 21px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: 161.7%;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 60px;
 }
 
 .btn-4 {
@@ -313,7 +314,7 @@
     font-weight: 500;
     line-height: normal;
     border-radius: 60px;
-    background: rgba(30, 113, 255, 0.10);
+    background: #e8f1ff;
     border: 2px solid #1e71ff;
     padding: 15px 40px;
 }
@@ -334,8 +335,8 @@
     line-height: 161.7%;
     max-width: 274px;
     padding-left: 24px;
-    padding-bottom: 80px;
- 
+    padding-bottom: 95px;
+
 }
 
 .btn-4:hover {
@@ -350,8 +351,8 @@
 }
 
 .line {
-    padding-top: 90px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* }
@@ -415,7 +416,7 @@
     font-weight: 275;
     line-height: 116.016%;
     letter-spacing: -0.52px;
-    
+
 }
 
 .text-4 {
@@ -438,17 +439,20 @@
     font-weight: 400;
     line-height: 161.7%;
     padding-bottom: 20px;
+    margin-top: 5px;
 }
-.text-5{
+
+.text-5 {
     color: rgba(43, 53, 62, 0.70);
-        font-family: 'Roboto',sans-serif;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 161.7%;
-       
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.7%;
+
 }
-.padding-bottom{
+
+.padding-bottom {
     padding-bottom: 20px;
 }
 
@@ -471,7 +475,7 @@
 .py-50 {
     padding-top: 90px;
     padding-bottom: 80px;
-   
+
 }
 
 
@@ -488,15 +492,32 @@
     font-weight: 400;
     line-height: 161.7%;
     margin-top: 65px;
-    padding-left: 80px;
-    padding-bottom: 30px;
+
+
 
 }
-.padding-py{
+
+.padding-py {
     padding-top: 90px;
 }
 
+.fixed {
+    position: fixed;
+    background-color: #1e71ff;
+    width: 100%;
+    z-index: 6;
+    top: 0;
+    left: 0;
 
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.flex-direction {
+    flex-direction: row;
+}
 
 @media(max-width:992px) {
     label[for="menuicon"] {
@@ -507,7 +528,9 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
+        position: fixed;
         top: 0px;
+        right: 0;
     }
 
     label[for="menuicon"]>span {
@@ -530,6 +553,7 @@
         justify-content: center;
         z-index: 1;
         transition: all 200ms linear;
+        /* position: fixed; */
 
     }
 
@@ -537,100 +561,127 @@
         right: 0;
     }
 
+    .flex-direction {
+        flex-direction: column;
+    }
+
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .copyright {
-            margin-top: 20px;
-            padding-left: 25px;
-        }
+        margin-top: 20px;
+        padding-left: 25px;
+    }
 }
-@media(max-width:768px){
-    .heading{
+
+@media(max-width:768px) {
+
+    .heading {
         font-size: 35px;
         margin-top: 20px;
     }
-    .heading-2{
+
+    .heading-2 {
         font-size: 35px;
         margin-top: 30px;
     }
-    .paragraph{
+
+    .paragraph {
         margin-bottom: 30px;
     }
-    .heading-3{
+
+    .heading-3 {
         font-size: 35px;
-        padding-top: 25px;
+        padding-top: 50px;
     }
-    
-    .paragraph-3{
+
+    .paragraph-3 {
         padding-left: 0;
-        padding-top: 10px;   
+        padding-top: 10px;
     }
-    .margin-right{
+
+    .margin-right {
         margin-bottom: 20px;
     }
-    .text{
+
+    .text {
         padding-bottom: 20px;
     }
-    .margin-my{
+
+    .margin-my {
         margin-bottom: 40px;
         margin-top: 35px;
     }
-    .padding-py{
+
+    .padding-py {
         padding-top: 30px;
     }
-    .padding-top{
+
+    .padding-top {
         padding-top: 30px;
     }
-    .copyright{
+
+    .copyright {
         margin-top: 20px;
         padding-left: 30px;
     }
-   
+
+    .help-p {
+        margin-top: 20px;
+    }
+
 
 }
-@media(max-width:576px){
-    .padding-py{
+
+@media(max-width:576px) {
+    .padding-py {
         padding-top: 30px;
     }
-         .heading-3 {
-             font-size: 35px;
-             padding-top: 25px;
-         }
+
+    .heading-3 {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
 }
 
 
-@media(min-width:320px){
+@media(min-width:320px) {
 
-    .col-sm-3{
-            width: 25%;
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-    
-        .text-4 {
-            padding-bottom: 25px;
-        }
-        
-                .line {
-                    padding-top: 40px;
-                 padding-bottom: 20px;
-             }
-                    
+    .col-sm-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .text-4 {
+        padding-bottom: 25px;
+    }
+
+
+
+    .help {
+        margin-top: 40px;
+    }
+
 }
-@media(min-width:576px){
-    
+
+@media(min-width:576px) {
+
     .col-sm-6 {
-            width: 50%;
-            padding-left: 12px;
-            padding-right: 12px;
-        }
-        .text-4 {
-              padding-bottom: 45px;
-                 }
-             .heading-3 {
-                      font-size: 35px;
-      }
-      
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .text-4 {
+        padding-bottom: 45px;
+    }
+
+    .heading-3 {
+        font-size: 48px;
+    }
+
 }
 
 @media(min-width:768px) {
@@ -645,10 +696,11 @@
         padding-left: 12px;
         padding-right: 12px;
     }
-   .text-4{
-    padding-bottom: 45px;
-   }
-   
+
+    .text-4 {
+        padding-bottom: 45px;
+    }
+
 }
 
 @media(min-width:992px) {
@@ -672,10 +724,16 @@
 
     .box {
         width: 50%;
+        height: 100%;
         position: absolute;
-        top: 37%;
-        bottom: 0;
+        top: 50%;
         left: 0;
-        transform: translateY(-38%);
+        transform: translateY(-50%);
+
     }
+
+    .box {
+        max-width: 816px;
+    }
+
 }
